@@ -7,8 +7,8 @@ import  static ru.job4j.math.MathFunction.multiply;
 
 public class MathCalcultor {
     public static double sumAndMultiply(double first, double second) {
-        return ru.job4j.math.MathFunction.sum(first, second)
-                + ru.job4j.math.MathFunction.multiply(first, second);
+        return sum(first, second)
+                + multiply(first, second);
     }
     public static double difAndDivision(double first, double second) {
         return dif(first,second)
