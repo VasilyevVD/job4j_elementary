@@ -24,8 +24,4 @@ class FitTest {
         double value = 0.01f;
         assertThat(output).isEqualTo(expected, withPrecision(0.01));
     }
-
-    @Test
-    void main() {
-    }
 }
