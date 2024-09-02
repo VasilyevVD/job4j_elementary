@@ -45,4 +45,44 @@ class CounterTest {
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
+
+    @Test
+    @DisplayName("sumByevem Start 0, Finish 10, Expected 30")
+    void sumByEvenStart0Finish10() {
+        int start = 0;
+        int finish = 10;
+        int expected = 30;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    @DisplayName("sumByevem Start 3, Finish 8, Expected 18")
+    void sumByEvenStart3Finish8() {
+        int start = 3;
+        int finish = 8;
+        int expected = 18;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    @DisplayName("sumByevem Start 1, Finish 1, Expected 0")
+    void sumByEvenStart1Finish1() {
+        int start = 1;
+        int finish = 1;
+        int expected = 0;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
+
+    @Test
+    @DisplayName("sumByevem Start -4, Finish 8, Expected 14")
+    void sumByEvenStartMinus2Finish8() {
+        int start = -4;
+        int finish = 8;
+        int expected = 14;
+        int output = Counter.sumByEven(start, finish);
+        assertThat(output).isEqualTo(expected);
+    }
 }
