@@ -45,8 +45,4 @@ class CounterTest {
         int output = Counter.sum(start, finish);
         assertThat(output).isEqualTo(expected);
     }
-
-    @Test
-    void main() {
-    }
 }
