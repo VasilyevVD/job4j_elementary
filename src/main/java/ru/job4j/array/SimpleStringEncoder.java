@@ -9,11 +9,18 @@ public class SimpleStringEncoder {
             if (input.charAt(i) == symbol) {
                 counter++;
             } else {
-                    result = result + symbol + counter;
+                    result += symbol;
+                if (counter > 1) {
+                    result += counter;
+                }
                     symbol = input.charAt(i);
                     counter = 1;
             }
-        } result = result + symbol + counter;
+        }
+        result += symbol;
+        if (counter > 1) {
+            result += counter;
+        }
         return result;
     }
 }
